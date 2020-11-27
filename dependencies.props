@@ -1,0 +1,77 @@
+<Project>
+    <PropertyGroup Label="SDK Versions">
+        <NetStandardTargetVersion>netstandard2.1</NetStandardTargetVersion>
+        <NetCoreTargetVersion>netcoreapp3.1</NetCoreTargetVersion>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions AspNetCore">
+        <AspNetCoreHealthChecksVersion>1.0.0</AspNetCoreHealthChecksVersion>
+        <AspNetCoreHealthChecksMySqlVersion>3.2.0</AspNetCoreHealthChecksMySqlVersion>
+        <AspNetCoreHealthChecksRabbitmqVersion>3.1.4</AspNetCoreHealthChecksRabbitmqVersion>
+        <AspNetCoreHealthChecksUIVersion>3.1.3</AspNetCoreHealthChecksUIVersion>
+        <AspNetCoreHealthChecksUIClientVersion>3.1.2</AspNetCoreHealthChecksUIClientVersion>
+        <FluentValidationAspNetCoreVersion>9.3.0</FluentValidationAspNetCoreVersion>
+        <HellangMiddlewareProblemDetailsVersion>5.1.1</HellangMiddlewareProblemDetailsVersion>
+        <MicrosoftAspNetCoreAuthenticationJwtBearerVersion>3.1.9</MicrosoftAspNetCoreAuthenticationJwtBearerVersion>
+        <MicrosoftAspNetCoreComponentsAuthorizationVersion>3.1.9</MicrosoftAspNetCoreComponentsAuthorizationVersion>
+        <MicrosoftAspNetCoreDiagnosticsHealthChecksVersion>2.2.0</MicrosoftAspNetCoreDiagnosticsHealthChecksVersion>
+        <MicrosoftAspNetCoreHealthChecksVersion>1.0.0</MicrosoftAspNetCoreHealthChecksVersion>
+        <MicrosoftAspNetCoreHttpAbstractionsVersion>2.2.0</MicrosoftAspNetCoreHttpAbstractionsVersion>
+        <MicrosoftAspNetCoreHostingVersion>2.2.7</MicrosoftAspNetCoreHostingVersion>
+        <MicrosoftAspNetCoreIdentityEntityFrameworkCoreVersion>3.1.8</MicrosoftAspNetCoreIdentityEntityFrameworkCoreVersion>
+        <MicrosoftAspNetCoreMvcNewtonsoftJsonVersion>3.1.8</MicrosoftAspNetCoreMvcNewtonsoftJsonVersion>
+        <MicrosoftAspNetCoreSignalRVersion>1.1.0</MicrosoftAspNetCoreSignalRVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="EntityFramework">
+        <IdentityServer4Version>4.1.1</IdentityServer4Version>
+        <MicrosoftEntityFrameworkCoreVersion>3.1.9</MicrosoftEntityFrameworkCoreVersion>
+        <MicrosoftEntityFrameworkCoreDesignVersion>3.1.9</MicrosoftEntityFrameworkCoreDesignVersion>
+        <MicrosoftEntityFrameworkCoreSqliteVersion>3.1.9</MicrosoftEntityFrameworkCoreSqliteVersion>
+        <MicrosoftEntityFrameworkCoreSqlServerVersion>3.1.9</MicrosoftEntityFrameworkCoreSqlServerVersion>
+        <MicrosoftEntityFrameworkCoreToolsVersion>3.1.9</MicrosoftEntityFrameworkCoreToolsVersion>
+        <MicrosoftExtensionsDiagnosticsHealthChecksEntityFrameworkCoreVersion>3.1.9</MicrosoftExtensionsDiagnosticsHealthChecksEntityFrameworkCoreVersion>
+        <MicrosoftExtensionsHttpPollyVersion>3.1.9</MicrosoftExtensionsHttpPollyVersion>
+        <MicrosoftNETCorePlatformsVersion>3.1.3</MicrosoftNETCorePlatformsVersion>
+        <MySqlDataEntityFrameworkCoreVersion>8.0.22</MySqlDataEntityFrameworkCoreVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions Serilog">
+        <SerilogVersion>2.10.0</SerilogVersion>
+        <SerilogAspNetCoreVersion>3.4.0</SerilogAspNetCoreVersion>
+        <SerilogEnrichersEnvironmentVersion>2.1.3</SerilogEnrichersEnvironmentVersion>
+        <SerilogExtensionsLoggingFileVersion>2.0.0</SerilogExtensionsLoggingFileVersion>
+        <SerilogSettingsConfigurationVersion>3.1.0</SerilogSettingsConfigurationVersion>
+        <SerilogSinksConsoleVersion>3.1.1</SerilogSinksConsoleVersion>
+        <SerilogSinksHttpVersion>7.1.0</SerilogSinksHttpVersion>
+        <SerilogSinksSeqVersion>4.0.0</SerilogSinksSeqVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions Autofac">
+        <AutofacVersion>6.0.0</AutofacVersion>
+        <AutofacExtensionsDependencyInjectionVersion>7.1.0</AutofacExtensionsDependencyInjectionVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions MediatR">
+        <MediatRVersion>7.0.0</MediatRVersion>
+        <MediatRExtensionsMicrosoftDependencyInjectionVersion>7.0.0</MediatRExtensionsMicrosoftDependencyInjectionVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions Polly">
+        <PollyVersion>7.2.1</PollyVersion>
+        <PollyExtensionsHttpVersion>3.0.0</PollyExtensionsHttpVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Versions Other">
+        <DapperVersion>2.0.35</DapperVersion>
+        <NewtonsoftJsonVersion>12.0.3</NewtonsoftJsonVersion>
+        <MicrosoftExtensionsHttpVersion>3.1.0</MicrosoftExtensionsHttpVersion>
+        <RabbitMQClientVersion>6.2.1</RabbitMQClientVersion>
+        <SwashbuckleAspNetCoreVersion>5.6.3</SwashbuckleAspNetCoreVersion>
+        <SystemReflectionVersion>4.3.0</SystemReflectionVersion>
+        <SystemValueTupleVersion>4.5.0</SystemValueTupleVersion>
+        <SystemComponentModelAnnotationsVersion>4.7.0</SystemComponentModelAnnotationsVersion>
+    </PropertyGroup>
+    
+</Project>

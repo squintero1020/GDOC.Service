@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+      <TargetFramework>$(NetCoreTargetVersion)</TargetFramework>
+      <GenerateDocumentationFile>true</GenerateDocumentationFile>
+      <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks" Version="$(AspNetCoreHealthChecksVersion)" />
+      <PackageReference Include="AspNetCore.HealthChecks.MySql" Version="$(AspNetCoreHealthChecksMySqlVersion)" />
+      <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="$(AspNetCoreHealthChecksRabbitmqVersion)" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI" Version="$(AspNetCoreHealthChecksUIVersion)" />
+      <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="$(AspNetCoreHealthChecksUIClientVersion)" />
+
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(MicrosoftAspNetCoreAuthenticationJwtBearerVersion)" />
+      <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="$(MicrosoftAspNetCoreComponentsAuthorizationVersion)" />
+      <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="$(MicrosoftAspNetCoreDiagnosticsHealthChecksVersion)" />
+      <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="$(MicrosoftAspNetCoreHealthChecksVersion)" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(MicrosoftAspNetCoreIdentityEntityFrameworkCoreVersion)" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(MicrosoftAspNetCoreMvcNewtonsoftJsonVersion)" />
+      <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="$(MicrosoftAspNetCoreSignalRVersion)" />
+
+      <PackageReference Include="Autofac" Version="$(AutofacVersion)" />
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="$(AutofacExtensionsDependencyInjectionVersion)" />
+
+      <PackageReference Include="FluentValidation.AspNetCore" Version="$(FluentValidationAspNetCoreVersion)" />
+      <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="$(HellangMiddlewareProblemDetailsVersion)" />
+
+      <PackageReference Include="MediatR" Version="$(MediatRVersion)" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="$(MediatRExtensionsMicrosoftDependencyInjectionVersion)" />
+
+      <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+      <PackageReference Include="RabbitMQ.Client" Version="$(RabbitMQClientVersion)" />
+
+      <PackageReference Include="IdentityServer4" Version="$(IdentityServer4Version)" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftEntityFrameworkCoreVersion)" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="$(MicrosoftEntityFrameworkCoreDesignVersion)">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(MicrosoftEntityFrameworkCoreSqliteVersion)" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(MicrosoftEntityFrameworkCoreSqlServerVersion)" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="$(MicrosoftEntityFrameworkCoreToolsVersion)">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="$(MicrosoftExtensionsDiagnosticsHealthChecksEntityFrameworkCoreVersion)" />
+      <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="$(MicrosoftExtensionsHttpPollyVersion)" />
+      <PackageReference Include="Microsoft.NETCore.Platforms" Version="$(MicrosoftNETCorePlatformsVersion)" />
+      <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="$(MySqlDataEntityFrameworkCoreVersion)" />
+
+      <PackageReference Include="Polly" Version="$(PollyVersion)" />
+      <PackageReference Include="Polly.Extensions.Http" Version="$(PollyExtensionsHttpVersion)" />
+
+
+      <PackageReference Include="Serilog" Version="$(SerilogVersion)" />
+      <PackageReference Include="Serilog.AspNetCore" Version="$(SerilogAspNetCoreVersion)" />
+      <PackageReference Include="Serilog.Enrichers.Environment" Version="$(SerilogEnrichersEnvironmentVersion)" />
+      <PackageReference Include="Serilog.Extensions.Logging.File" Version="$(SerilogExtensionsLoggingFileVersion)" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="$(SerilogSettingsConfigurationVersion)" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="$(SerilogSinksConsoleVersion)" />
+      <PackageReference Include="Serilog.Sinks.Http" Version="$(SerilogSinksHttpVersion)" />
+      <PackageReference Include="Serilog.Sinks.Seq" Version="$(SerilogSinksSeqVersion)" />
+
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="$(SwashbuckleAspNetCoreVersion)" />
+
+      <PackageReference Include="System.Reflection" Version="$(SystemReflectionVersion)" />
+      <PackageReference Include="System.ValueTuple" Version="$(SystemValueTupleVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\GDOCService.DataAccess\GDOCService.DataAccess.csproj" />
+    <ProjectReference Include="..\GDOCService.Rules\GDOCService.Rules.csproj" />
+    <ProjectReference Include="..\IntegrationEventLog\IntegrationEventLog.csproj" />
+    <ProjectReference Include="..\SharedService\SharedService.csproj" />
+    <ProjectReference Include="..\WebHost.Customization\WebHost.Customization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Epicor.ServiceModel">
+      <HintPath>..\..\..\Epicor\ERP10\LocalClients\ERP102300\Epicor.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.UserFile">
+      <HintPath>..\..\..\Epicor\ERP10\LocalClients\ERP102300\Erp.Contracts.BO.UserFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UserFile">
+      <HintPath>..\..\..\Epicor\ERP10\LocalClients\ERP102300\Ice.Contracts.BO.UserFile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

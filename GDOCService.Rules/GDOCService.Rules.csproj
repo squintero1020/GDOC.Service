@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(NetCoreTargetVersion)</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GDOCService.DataAccess\GDOCService.DataAccess.csproj" />
+    <ProjectReference Include="..\SharedService\SharedService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Epicor.ServiceModel">
+      <HintPath>..\..\..\Epicor\ERP10\LocalClients\ERP102300\Epicor.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.UserFile">
+      <HintPath>..\..\..\Epicor\ERP10\LocalClients\ERP102300\Erp.Contracts.BO.UserFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UserFile">
+      <HintPath>..\..\..\Epicor\ERP10\LocalClients\ERP102300\Ice.Contracts.BO.UserFile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
